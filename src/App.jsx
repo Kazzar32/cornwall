@@ -113,7 +113,7 @@ export default function App() {
       {/* Popular Categories */}
       <section className="py-16 px-4 max-w-6xl mx-auto">
         <h2 className="text-3xl font-bold text-center mb-10">Popular Categories</h2>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           {[
             "Restaurants",
             "Fitness",
@@ -121,3 +121,17 @@ export default function App() {
             "Services",
             "Beauty",
             "Health",
+            "Entertainment",
+            "More..."
+          ].map((cat) => (
+            <div
+              key={cat}
+              onClick={() => setSelectedCategory(cat)}
+              className={`cursor-pointer bg-gray-100 hover:bg-gray-200 text-center p-6 rounded-lg ${
+                selectedCategory === cat ? "bg-yellow-200" : ""
+              }`}
+            >
+              <p className="text-lg font-semibold">{cat}</p>
+            </div>
+          ))}
+        </div>
