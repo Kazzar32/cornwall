@@ -125,6 +125,7 @@ export default function App() {
             "More..."
           ].map((cat) => (
             <div
+                 </section>
               key={cat}
               onClick={() => setSelectedCategory(cat)}
               className={`cursor-pointer bg-gray-100 hover:bg-gray-200 text-center p-6 rounded-lg ${
