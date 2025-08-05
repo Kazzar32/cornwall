@@ -135,6 +135,16 @@ export default function App() {
             </div>
           ))}
         </div>
+              {/* Business Listings */}
+      <section className="py-16 px-4 max-w-6xl mx-auto">
+        <h2 className="text-3xl font-bold text-center mb-10">Featured Businesses</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {sortedBusinesses.map((biz) => (
+            <BusinessCard key={biz.id} business={biz} />
+          ))}
+        </div>
+      </section>
+
               {/* Footer */}
       <footer className="bg-gray-900 text-white py-10 text-center">
         <p>&copy; {new Date().getFullYear()} Hawaii Thrive Clone. All rights reserved.</p>
