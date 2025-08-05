@@ -135,3 +135,10 @@ export default function App() {
             </div>
           ))}
         </div>
+              {/* Footer */}
+      <footer className="bg-gray-900 text-white py-10 text-center">
+        <p>&copy; {new Date().getFullYear()} Hawaii Thrive Clone. All rights reserved.</p>
+      </footer>
+    </div>
+  );
+}
